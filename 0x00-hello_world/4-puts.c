@@ -5,7 +5,7 @@
  *
  * Return : Always 0 (Success)
  */
-int main(void) /* No arguments are to be passed */
+int main(void) /* Main returns 0 and prints the string */
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
