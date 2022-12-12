@@ -12,12 +12,14 @@ int main(void)
 	{
 		for (b = a + 1; b <= 9; b++)
 		{
-				putchar(a + '0');
-				putchar(b + '0');
-				if (a == 8 && b == 9)
-				continue;
-				putchar(',');
-				putchar(' ');
+			putchar(a + '0');
+			putchar(b + '0');
+
+			if (a == 8 && b == 9)
+			continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
