@@ -13,10 +13,19 @@ int main(void)
 	for (i = 0; i <= 50; i++)
 	{
 		nextTerm = t1 + t2;
-		printf("%lu, ", nextTerm);
+		printf("%lu", nextTerm);
 
 		t1 =  t2;
 		t2 = nextTerm;
+
+		if (i == 49)
+		{
+			printf("\n");
+		}
+		else
+		{
+			printf(",");
+		}
 	}
 	return (0);
 }
