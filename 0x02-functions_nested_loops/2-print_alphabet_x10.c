@@ -7,18 +7,13 @@
  */
 void print_alphabet_x10(void)
 {
-	int b = 0, c;
+	int a, b;
 
-	while (b <= 9)
+	for (a = 0; a <= 9; a++)
 	{
-		c = 97;
-
-		while (c <= 122)
+		for (b = 97; b <= 122; b++)
 		{
-			_putchar(c);
-			c++;
+			_putchar(b);
 		}
 		_putchar('\n');
-		b++;
-	}
 }
