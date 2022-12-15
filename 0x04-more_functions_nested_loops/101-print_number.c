@@ -8,9 +8,17 @@
  */
 void print_number(int n)
 {
-	char b;
+	unsigned int i = n;
 
-	b = (n % 10) + '0';
+	if (n < 0)
+	{
+		_putchar(45);
+		i = -i;
+	}
+	if (i / 10)
+	{
+		print_number(i / 10);
+	}
 
-	_putchar(b);
+	_putchar(i % 10 + '0');
 }
