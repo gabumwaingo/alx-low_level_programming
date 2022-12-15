@@ -27,7 +27,7 @@ int main(void)
 		aft += bef;
 		bef = aft - bef;
 	}
-	if (count != 98)
+	if (i != 98)
 	{
 		printf(", ");
 	}
