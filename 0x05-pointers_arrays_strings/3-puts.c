@@ -9,12 +9,11 @@
 void _puts(char *str)
 {
 	int a;
-	char b;
 
-	for (a = 0; str[a]; a++)
+	for (a = 0; str[a] != 0; a++)
 	{
+		_putchar(str[a]);
 	}
-	b = str[a];
+	 _putchar('\n');
 
-	_putchar(b);
 }
