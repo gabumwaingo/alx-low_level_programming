@@ -14,16 +14,16 @@ char *cap_string(char *str)
 
 	while (*(str + i))
 	{
-		if ((*str + i) >= 'a' && *(str + i) <= 'z')
+		if (*(str + i) >= 'a' && *(str + i) <= 'z')
 		{
 			if (i == 0)
-				*(str + i) -= 'a' + 'A';
+				*(str + i) -= 'a' - 'A';
 			else
 			{
 				for (j = 0; j <= 12; j++)
 				{
 					if (b[j] == *(str + i - 1))
-						*(str + i) -= 'a' + 'A';
+						*(str + i) -= 'a' - 'A';
 				}
 			}
 		}
