@@ -12,7 +12,7 @@ char *cap_string(char *str)
 	char b[] = " ,;.!?\"(){}";
 
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(str + i))
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
@@ -27,6 +27,7 @@ char *cap_string(char *str)
 				}
 			}
 		}
+		i++
 	}
 	return (str);
 }
