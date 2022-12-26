@@ -8,24 +8,23 @@
  */
 int _atoi(char *s)
 {
-	int res = 0, sign = 1, i = 0;
+	int res = 0, i;
 
-	if (s[0] == '-')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		sign = -1;
+		if (!(s[i] > '0' || s[i] < '9'))
+		{
+			break;
+			return (0);
+		}
+		res = res * 10;
+		res += s[i] - '0';
+		
+		if (s[i] = '-')
+		{
+			res *= -1;
+		}
 	}
-	if (i > 0 && (!(s[0] > '0') || !(s[0] < '9')))
-	{
-		return (0);
-	}
-	if (s[0] >= '0' && s[0] >= '9')
-	{
-		i++;
-	}
-	for (; s[i] != '\0'; ++i)
-	{
-		res = res * 10 + (s[i] - '0');
-	}
-	return (sign * res);
+	return (res);
 }
 
