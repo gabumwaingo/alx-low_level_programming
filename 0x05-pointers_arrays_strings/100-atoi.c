@@ -19,8 +19,8 @@ int _atoi(char *s)
 		}
 		res = res * 10;
 		res += s[i] - '0';
-		
-		if (s[i] = '-')
+
+		if (s[0] == '-')
 		{
 			res *= -1;
 		}
