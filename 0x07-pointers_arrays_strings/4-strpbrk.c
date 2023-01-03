@@ -10,13 +10,17 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	while (*s)
+	unsigned int i, j;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (_strchr(accept, *s))
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			return (s);
+			if (s[i] == accept[j])
+			{
+				return (s + i);
+			}
 		}
-		*s++;
 	}
 	return (NULL);
 }
