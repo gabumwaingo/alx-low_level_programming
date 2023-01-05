@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * evaluate function - used to get pure root numbers
+ * evaluate - used to get pure root numbers
  * @i: input int
  * @n: input int
  * Return: squareroot
