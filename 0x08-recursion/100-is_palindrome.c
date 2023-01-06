@@ -8,8 +8,10 @@
  */
 int len(char *s)
 {
-	if (*s != '\0')
+	if (!*s)
+	{
 		return (0);
+	}
 	return (1 + len(s++));
 }
 
