@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point to the program
@@ -13,7 +14,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)
 	{
 		if (i == 0)
-			_putchar(*argv[i]);
+			printf("%s\n", argv[i]);
 
 	}
 	return (0);
