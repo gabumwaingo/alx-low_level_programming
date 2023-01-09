@@ -1,3 +1,1 @@
-int _abs(int n)
-{
-}
+int _abs(int __attribute__((__unused__)) n);

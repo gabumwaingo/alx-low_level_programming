@@ -1,3 +1,1 @@
-char *_memset(char *s, char b, unsigned int n)
-{
-}
+char *_memset(char __attribute__((__unused__)) *s, char __attribute__((__unused__)) b, unsigned int __attribute__((__unused__)) n);

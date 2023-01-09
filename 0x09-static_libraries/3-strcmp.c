@@ -1,3 +1,1 @@
-int _strcmp(char *s1, char *s2)
-{
-}
+int _strcmp(char __attribute__((__unused__)) *s1, char __attribute__((__unused__)) *s2);

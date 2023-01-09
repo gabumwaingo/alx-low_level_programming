@@ -1,4 +1,1 @@
-char *_strncat(char *dest, char *src, int n)
-{
-}
-
+char *_strncat(char __attribute__((__unused__)) *dest, char __attribute__((__unused__)) *src, int __attribute__((__unused__)) n);

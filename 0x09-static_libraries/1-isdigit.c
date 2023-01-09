@@ -1,3 +1,1 @@
-int _isdigit(int c)
-{
-}
+int _isdigit(int __attribute__((__unused__)) c);

@@ -1,3 +1,1 @@
-char *_strncpy(char *dest, char *src, int n)
-{
-}
+char *_strncpy(char __attribute__((__unused__)) *dest, char __attribute__((__unused__)) *src, int __attribute__((__unused__)) n);
