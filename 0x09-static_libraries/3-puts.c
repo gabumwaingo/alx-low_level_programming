@@ -1,1 +1,10 @@
-void _puts(char __attribute__((__unused__)) *s);
+#include "main.h"
+
+void _puts(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		_putchar(s[i]);
+	_putchar('\n');
+}

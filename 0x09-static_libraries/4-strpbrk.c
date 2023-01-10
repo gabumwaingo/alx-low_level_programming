@@ -1,1 +1,17 @@
-char *_strpbrk(char __attribute__((__unused__)) *s, char __attribute__((__unused__)) *accept);
+#include "main.h"
+#include <stddef.h>
+
+char *_strpbrk(char *s, char *accept)
+{
+	unsigned int i, j;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+				return (s + i);
+		}
+	}
+	return (NULL);
+}

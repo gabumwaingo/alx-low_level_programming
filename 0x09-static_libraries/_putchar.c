@@ -1,1 +1,7 @@
-int _putchar(char __attribute__((__unused__)) c);
+#include "main.h"
+#include <unistd.h>
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}

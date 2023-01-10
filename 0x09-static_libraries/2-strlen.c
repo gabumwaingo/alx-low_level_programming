@@ -1,1 +1,11 @@
-int _strlen(char __attribute__((__unused__)) *s);
+#include "main.h"
+
+int _strlen(char *s)
+{
+	int a;
+
+	for (a = 0; s[a] != '\0'; a++)
+	{
+	}
+	return (a);
+}

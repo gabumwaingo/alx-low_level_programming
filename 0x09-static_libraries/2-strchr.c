@@ -1,1 +1,12 @@
-char *_strchr(char __attribute__((__unused__)) *s, char __attribute__((__unused__)) c);
+#include "main.h"
+#include <stddef.h>
+
+char *_strchr(char *s, char c)
+{
+	do
+	{
+		if (*s == c)
+			return (s);
+	} while (*s++);
+	return (NULL);
+}
