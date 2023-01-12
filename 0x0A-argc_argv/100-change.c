@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	n = strtol(argv[1], &k, 10);
 	j = 0;
-	
+
 	if (!*k)
 	{
 
