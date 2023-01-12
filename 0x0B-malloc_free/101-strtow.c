@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+void util(char **, char *);
+void create_word(char **, char *, int, int, int);
 /**
  * strtow - splits string into words
  * @str: the input string
@@ -88,4 +90,4 @@ void create_word(char **words, char *str, int start, int end, int index)
 	for (j = 0; start < end; start++, j++)
 		words[index][j] = str[start];
 	words[index][j] = '\0';
-}
+}		
