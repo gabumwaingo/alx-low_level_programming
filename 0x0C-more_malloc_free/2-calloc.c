@@ -18,6 +18,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
+	if (arr == NULL)
+		return (NULL);
+
 	for (a = 0; a < (nmemb * size); a++)
 		arr[a] = 0;
 
