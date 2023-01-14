@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _strcmp - compares two strings
+ * @s1: first strings
+ * @s2: second string
+ *
+ * Return: 0 when strings are equal
+ * above or below 0 when strings are not equal
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int i;

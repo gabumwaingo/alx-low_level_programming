@@ -1,6 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * *_strcpy - copies astring to another buffer
+ * @dest: where copy is placed
+ * @src: where copy is extracted
+ *
+ * Return: pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
