@@ -3,7 +3,7 @@
 /**
  * print_name -  prints name using callback function
  * @name: the name to be printed
- * @f: the pointer calling the function to print 
+ * @f: the pointer calling the function to print
  * name
  * Return: Nothing
  */
