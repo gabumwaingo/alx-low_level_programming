@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * reverse_listint - reversewbtye linked list
