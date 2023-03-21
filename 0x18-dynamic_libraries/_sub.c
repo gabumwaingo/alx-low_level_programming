@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "list.h"
 /**
  * sub - subtracts two ints
  * @a: first int
@@ -8,7 +8,7 @@
  */
 int sub(int a, int b)
 {
-	int sub;
+	int s;
 
 	s = a - b;
 	return (s);

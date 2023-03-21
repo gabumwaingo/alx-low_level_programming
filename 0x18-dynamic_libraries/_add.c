@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "list.h"
 
 /**
  * add - adds teo ints

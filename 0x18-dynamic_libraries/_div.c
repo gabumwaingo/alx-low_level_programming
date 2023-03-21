@@ -1,4 +1,4 @@
-#include "main.c"
+#include "list.h"
 #include <stdio.h>
 /**
  * div - dividea two ints
