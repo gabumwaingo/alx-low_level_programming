@@ -7,7 +7,7 @@
  * @b: second int
  * Return: sum of the two
  */
-int _add(int a, int b)
+int add(int a, int b)
 {
 	int s;
 
