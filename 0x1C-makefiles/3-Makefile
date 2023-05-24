@@ -18,6 +18,3 @@ oclean :
 fclean : clean oclean
 
 re : fclean all
-
-#makes the onjectfiles dependat on source file hence updtae in source file will lead  to recompilation of object file
-T $(OBJ) : $(SRC)
