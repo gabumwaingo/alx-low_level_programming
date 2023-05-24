@@ -1,6 +1,5 @@
-#demostrating use of variables in makefiles
 CC := gcc
 SRC := main.c school.c
 
-all :
+all : $(SRC)
 	$(CC) $(SRC) -o school
