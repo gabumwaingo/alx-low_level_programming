@@ -2,5 +2,22 @@ CC := gcc
 SRC := main.c school.c
 OBJ := $(SRC:.c=.o)
 NAME := school
-RM := clean
+RM := rm -f
 
+.PHONY : all clean re
+
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean :
+	$(RM) *~ $(NAME)
+
+oclean :
+	$(RM) $(OBJ)
+
+fclean : clean oclean
+
+re : fclean all
+
+#makes the onjectfiles dependat on source file hence updtae in source file will lead  to recompilation of object file
+T $(OBJ) : $(SRC)
