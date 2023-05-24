@@ -1,0 +1,9 @@
+#Only recompiles updated source files
+CC := gcc
+SRC := school.c main.c
+OBJ := $(SRC:.c=.o)
+NAME := school
+
+#default rule
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
