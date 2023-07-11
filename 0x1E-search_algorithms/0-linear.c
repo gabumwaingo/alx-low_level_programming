@@ -1,5 +1,4 @@
 #include "search_algos.h"
-#include <stdlib.h>
 
 /**
 *linear_search - searches for a value in an int
